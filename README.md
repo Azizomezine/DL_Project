@@ -46,7 +46,7 @@ Run the Django server using the command python manage.py runserver.
 Go to your web browser and navigate to http://localhost:127.0.0.1.
 
 ## Demo
-live demo of the skin disease classification website is available at 
+live demo of the skin disease classification website is available at https://youtu.be/rcorCEByhYk 
 
 ## References
 ### Dataset: https://www.kaggle.com/datasets/shubhamgoel27/dermnet
