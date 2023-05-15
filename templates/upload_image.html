@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Image</title>
+</head>
+<body>
+    <h1>Upload Image</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="image">
+        <p>Drag your files here or click in this area.</p>
+        <button type="submit">Upload</button>
+    </form>
+
+    <div class="Emergency_contact">
+        <div class="conatiner-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-xl-6">
+                    <div class="single_emergency d-flex align-items-center justify-content-center emergency_bg_1 overlay_skyblue">
+                        <div class="info">
+                            <h3>For Any Emergency Contact</h3>
+                            <p>new.Genic@esprit.tn</p>
+                        </div>
+                        <div class="info_button">
+                            <a href="#" class="boxed-btn3-white">+216 56 171 888</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="single_emergency d-flex align-items-center justify-content-center emergency_bg_2 overlay_skyblue">
+                        <div class="info">
+                            <h3>Make a Prediction </h3>
+                            <p>Go ahead, take a moment to analyze the information.</p>
+                        </div>
+                        <div class="info_button">
+                            <a href="{% url 'pages:PredictionPage' %}" class="boxed-btn3-white">Make a Prediction</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
